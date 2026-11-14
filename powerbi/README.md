@@ -1,0 +1,1 @@
+Import the loaded warehouse tables into Power BI Desktop, configure relationships on retained IDs, and build the report using `dashboard_specification.md` and `measures.md`. The repository intentionally does not fabricate a PBIX.

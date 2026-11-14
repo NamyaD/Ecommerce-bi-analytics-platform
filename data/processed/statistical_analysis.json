@@ -1,0 +1,38 @@
+{
+  "promotion_welch_t_test": {
+    "h0": "Promotion does not affect mean order revenue (proxy for AOV when order item totals are used).",
+    "h1": "Promotion changes mean order revenue.",
+    "alpha": 0.05,
+    "n_promotion": 8130,
+    "n_no_promotion": 15145,
+    "mean_promotion": 2157.115897908979,
+    "mean_no_promotion": 2110.450981181908,
+    "t_statistic": 1.5403222558303271,
+    "p_value": 0.12350107477670139,
+    "significant": false,
+    "interpretation": "Association only; this observational synthetic comparison does not establish causality."
+  },
+  "delivery_delay_rating_pearson": {
+    "n": 24998,
+    "correlation": -0.523882525737166,
+    "p_value": 0.0,
+    "interpretation": "Correlation does not imply causation."
+  },
+  "revenue_regression": {
+    "features": [
+      "promotion_applied",
+      "order_month",
+      "item_count"
+    ],
+    "target": "order item revenue per order",
+    "coefficients": {
+      "promotion_applied": 30.45542656224561,
+      "order_month": -2.5622596722480795,
+      "item_count": 1387.965354700859
+    },
+    "intercept": 12.578305118264325,
+    "mae": 1317.9523213787113,
+    "r2": 0.19134532762227563,
+    "limitations": "Synthetic data, limited predictors, random holdout, and no causal interpretation."
+  }
+}

@@ -1,0 +1,1 @@
+SELECT SUM(i.line_revenue) revenue,COUNT(DISTINCT o.order_id) orders,SUM(i.line_revenue)*1.0/COUNT(DISTINCT o.order_id) aov FROM fact_orders o JOIN fact_order_items i USING(order_id) WHERE o.order_status NOT IN ('cancelled','returned');

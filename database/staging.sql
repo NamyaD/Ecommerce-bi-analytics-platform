@@ -1,0 +1,1 @@
+-- Staging tables are generated from source CSV schemas by pandas to_sql. Names use stg_ prefix.

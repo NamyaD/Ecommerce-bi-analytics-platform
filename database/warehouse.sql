@@ -1,0 +1,1 @@
+-- Canonical warehouse DDL is in schema.sql. Grain: each fact_orders row is one order; each fact_order_items row is one order line; each payment/delivery fact row is one payment/delivery event.

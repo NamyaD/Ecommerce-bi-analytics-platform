@@ -1,0 +1,1 @@
+SELECT i.seller_id,SUM(i.line_revenue) revenue,COUNT(DISTINCT i.order_id) item_orders, SUM(CASE WHEN o.order_status='cancelled' THEN 1 ELSE 0 END)*1.0/COUNT(DISTINCT i.order_id) cancellation_rate FROM fact_order_items i JOIN fact_orders o USING(order_id) GROUP BY i.seller_id ORDER BY revenue DESC;

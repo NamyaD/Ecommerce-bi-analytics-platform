@@ -1,0 +1,1 @@
+WITH spend AS (SELECT o.customer_id, COUNT(DISTINCT o.order_id) orders, SUM(i.line_revenue) revenue FROM fact_orders o JOIN fact_order_items i USING(order_id) WHERE o.order_status NOT IN ('cancelled','returned') GROUP BY o.customer_id) SELECT *, CASE WHEN orders>=5 THEN 'Loyal' WHEN orders>=2 THEN 'Repeat' ELSE 'One-time' END segment FROM spend ORDER BY revenue DESC;

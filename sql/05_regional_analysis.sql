@@ -1,0 +1,1 @@
+SELECT c.region,SUM(i.line_revenue) revenue,COUNT(DISTINCT o.order_id) orders FROM fact_orders o JOIN dim_customer c USING(customer_id) JOIN fact_order_items i USING(order_id) WHERE o.order_status NOT IN ('cancelled','returned') GROUP BY c.region ORDER BY revenue DESC;

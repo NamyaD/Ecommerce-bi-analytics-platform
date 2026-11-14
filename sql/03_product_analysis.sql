@@ -1,0 +1,1 @@
+WITH p AS (SELECT d.category,d.product_name,SUM(i.line_revenue) revenue FROM fact_order_items i JOIN dim_product d USING(product_id) GROUP BY d.category,d.product_name) SELECT *, DENSE_RANK() OVER(PARTITION BY category ORDER BY revenue DESC) category_rank FROM p;

@@ -1,0 +1,3 @@
+- Built a configurable Python/Pandas ETL pipeline to generate, clean, validate and audit relational e-commerce data, including duplicate, null, invalid-value and orphan-key handling.
+- Designed a SQLAlchemy analytical warehouse with staging and star-schema fact/dimension tables; developed SQL analysis using CTEs, joins, ranking and window functions.
+- Delivered documented business KPIs, Power BI report specifications, Welch testing, correlation/regression analysis and three-month revenue/order forecasts with evaluation metrics.

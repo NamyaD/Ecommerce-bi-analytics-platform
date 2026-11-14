@@ -1,0 +1,1 @@
+SELECT delivery_status,COUNT(*) deliveries,AVG(julianday(actual_delivery_date)-julianday(promised_delivery_date)) avg_variance_days,AVG(customer_rating) avg_rating FROM fact_deliveries GROUP BY delivery_status;

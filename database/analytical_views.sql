@@ -1,0 +1,2 @@
+CREATE VIEW IF NOT EXISTS vw_monthly_sales AS SELECT substr(o.order_date,1,7) AS year_month, SUM(i.line_revenue) AS revenue, COUNT(DISTINCT o.order_id) AS orders FROM fact_orders o JOIN fact_order_items i ON o.order_id=i.order_id WHERE o.order_status NOT IN ('cancelled','returned') GROUP BY substr(o.order_date,1,7);
+CREATE VIEW IF NOT EXISTS vw_category_sales AS SELECT p.category, SUM(i.line_revenue) revenue FROM fact_order_items i JOIN dim_product p ON p.product_id=i.product_id GROUP BY p.category;

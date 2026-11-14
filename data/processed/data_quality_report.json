@@ -1,0 +1,76 @@
+{
+  "rows_received": {
+    "customers": 10001,
+    "sellers": 250,
+    "products": 1000,
+    "orders": 25000,
+    "order_items": 38007,
+    "payments": 25000,
+    "deliveries": 25000,
+    "locations": 16,
+    "dates": 731
+  },
+  "duplicate_rows": {
+    "customers": 1,
+    "sellers": 0,
+    "products": 0,
+    "orders": 0,
+    "order_items": 0,
+    "payments": 0,
+    "deliveries": 0,
+    "locations": 0,
+    "dates": 0
+  },
+  "null_issues": {
+    "customers": {
+      "city": 20
+    },
+    "sellers": {},
+    "products": {},
+    "orders": {},
+    "order_items": {},
+    "payments": {},
+    "deliveries": {},
+    "locations": {},
+    "dates": {}
+  },
+  "invalid_rows": {
+    "order_items.quantity": 3,
+    "order_items.unit_price": 2,
+    "products.unit_price": 0,
+    "products.cost_price": 0
+  },
+  "orphan_rows": {
+    "orders.customer_id": 2,
+    "order_items.order_id": 0,
+    "payments.order_id": 2,
+    "deliveries.order_id": 2,
+    "order_items.product_id": 0
+  },
+  "rows_rejected": {
+    "customers": 1,
+    "sellers": 0,
+    "products": 0,
+    "orders": 2,
+    "order_items": 5,
+    "payments": 2,
+    "deliveries": 2,
+    "locations": 0,
+    "dates": 0
+  },
+  "rows_cleaned": {
+    "customers": 10000,
+    "sellers": 250,
+    "products": 1000,
+    "orders": 24998,
+    "order_items": 38002,
+    "payments": 24998,
+    "deliveries": 24998,
+    "locations": 16,
+    "dates": 731
+  },
+  "validation_failures": [],
+  "rows_received_total": 125005,
+  "rows_cleaned_total": 124993,
+  "rows_rejected_total": 12
+}
