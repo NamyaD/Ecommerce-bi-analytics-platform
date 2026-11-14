@@ -1,3 +1,6 @@
+# Ecommerce-bi-analytics-platform
+End-to-end e-commerce BI analytics platform with ETL, SQL, statistical analysis, forecasting and business insights.
+
 # E-Commerce Business Intelligence & Analytics Platform
 
 An end-to-end portfolio project for BI Engineer, Data Analyst and Data Engineer internships. It generates reproducible synthetic Indian e-commerce data, deliberately injects source-quality defects, cleans and validates the data, loads an analytical warehouse, and produces KPI, statistical, forecast and business-insight outputs for Power BI.
