@@ -33,7 +33,7 @@ Python 3.11+, Pandas, NumPy, SQLAlchemy, SQLite/PostgreSQL, SciPy, scikit-learn 
 
 Configure using `.env` (copy `.env.example`; export values in your shell or use your preferred dotenv loader): `RANDOM_SEED`, `N_CUSTOMERS`, `N_ORDERS`, `N_PRODUCTS`, `N_SELLERS`, `START_DATE`, `END_DATE`, `DB_URL`. Scale these counts as compute permits. The default seed is 42.
 
-## Data model and ETL
+## Data model, ETL
 
 Raw CSV entities: customers, sellers, products, orders, order_items, payments, deliveries, locations and dates. ETL deduplicates, normalizes categories, fills missing customer city, rejects invalid quantities/prices and orphan foreign keys, calculates line revenue, validates referential integrity and loads staging plus warehouse tables. The quality report records received, duplicate, null, invalid, orphan, rejected and cleaned counts.
 
